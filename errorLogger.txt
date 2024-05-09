@@ -1,0 +1,25 @@
+3:57:49 AM-Results are alredy prepared - Error: Results are alredy prepared
+    at teamRepo.findTeamsAndCreateTeamResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\repository\teamRepo.js:97:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async teamService.processResult (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\services\teamService.js:104:7)
+    at async c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\routers\router.js:28:10
+4:05:39 AM-No team was created to process on, First add a team - Error: No team was created to process on, First add a team
+    at teamRepo.findTeamsAndCreateTeamResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\repository\teamRepo.js:24:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async teamService.processResult (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\services\teamService.js:104:7)
+    at async c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\routers\router.js:28:10
+4:06:21 AM-Results are not available, First you must have a saved team, then process data. Then you can ask for results - Error: Results are not available, First you must have a saved team, then process data. Then you can ask for results
+    at teamRepo.fetchProcessedTeamResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\repository\teamRepo.js:119:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async teamService.showResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\services\teamService.js:115:24)
+    at async c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\routers\router.js:40:28
+4:06:38 AM-Results are alredy prepared - Error: Results are alredy prepared
+    at teamRepo.findTeamsAndCreateTeamResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\repository\teamRepo.js:103:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async teamService.processResult (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\services\teamService.js:104:7)
+    at async c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\routers\router.js:28:10
+4:06:39 AM-Results are alredy prepared - Error: Results are alredy prepared
+    at teamRepo.findTeamsAndCreateTeamResults (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\repository\teamRepo.js:103:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async teamService.processResult (c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\services\teamService.js:104:7)
+    at async c:\Users\mohd.soyab\Downloads\New folderCom\Dream11Assignment\routers\router.js:28:10
