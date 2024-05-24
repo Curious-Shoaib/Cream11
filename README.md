@@ -1,3 +1,16 @@
+**API information**<br>
+1. http://localhost:3000/       --     it will give info about about available APIs
+2. http://localhost:3000/add-team  --   this endpoint accept POST request with team object as json. make json object as follows
+  {
+   "teamName" : "Moin Ali starer",
+   "players" : ["MM Ali","Simarjeet Singh","Mukesh Choudhary", "Shivam Dube","Maheesh Theekshana","SV Samson","YS Chahal","Robin Uthappa","Shubham Garhwal","Dhruv Jurel","Daryl Mitchell"],
+   "captain" : "YS Chahal",
+   "viceCaptain" : "MM Ali"
+}
+
+3.  http://localhost:3000/process-result    -- this endpoint accepts PUT request with no intput, and process team results
+4.  http://localhost:3000/team-result       -- this endpoint accepts GET request with no input and return results of all created team
+
 # TASK
 
 Write a simple backend to accept team entries for a fantasy cricket app (similar to Dream11) and process the results based on match results. Use Node.js backend with express for API and MongoDB for database. Core packages are pre-installed with a dev database connection to MongoDB Atlas. You are free to add additional libraries for validation, etc.
