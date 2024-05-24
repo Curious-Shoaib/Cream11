@@ -1,6 +1,5 @@
 const {modelObject,teamResultModel}=require('../models/teamModel.js');
 
-
 const teamRepo={};
 
 teamRepo.saveTeam=async(teamObj)=>{
@@ -18,6 +17,7 @@ teamRepo.saveTeam=async(teamObj)=>{
 teamRepo.findTeamsAndCreateTeamResults=async(playerStats)=>{
 
     try{
+        await teamResultModel.deleteMany();
     const allTeams=await modelObject.find({});
         if(allTeams.length==0)
         {

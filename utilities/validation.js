@@ -27,6 +27,12 @@ validator.validateTeam=(teamObj)=>{
         error.status=400;   
         throw error;
     }
+    if(viceCaptain === captain)
+        {
+            const error=new Error('captain and vice captain must be different player');
+            error.status=400;   
+            throw error;
+        }
     if(!selectedPlayersArray)
     {
         const error=new Error('Please choose remaining 11 players');

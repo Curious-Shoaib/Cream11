@@ -3,10 +3,10 @@ const {saveTeam,processResult,showResults}=require('../services/teamService');
 const router=express.Router();
 
 
-// this endpoint must have valid body object, i.e. fields should be like this,
+// this endpoint must recieve valid body object, i.e. fields should be like this,
 // {
 //    "teamName" : "Hunters",
-//    "players" : ["<Array of 11 players>"],
+//    "players" : ["<Array of 11 players name string>"],
 //    "captain" : "<choosen captain name>",
 //    "viceCaptain" : "<choosen vice captain>"
 // }
@@ -45,5 +45,22 @@ router.get('/team-result',async(req,res,next)=>{
          next(error);
       }
 
+})
+
+
+router.all('/',(req,res,next)=>{
+   
+   const apiInstructions={
+      'To Add team' : "use  /add-team to send team JSON with POST request",
+      'TeamObjectSample' : {
+         "teamName" : "<Any Arbitrary name>",
+         "players" : ["<Array of 11 players that must have valid names in string>"],
+         "captain" : "<choosen captain name>",
+         "viceCaptain" : "<choosen vice captain>"
+      },
+      'To process Match result' : "use /process-result  with PUT request , it will process all teams point",
+      'To get the team results and Winners' : "use /team-result with GET request, it will return array of all teams result"
+   };
+   res.send(apiInstructions);
 })
 module.exports=router;
