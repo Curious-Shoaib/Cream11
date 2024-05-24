@@ -3,10 +3,10 @@ Note : please make sure to have mongoDB installed in your system before running 
 1. http://localhost:3000/       --     it will give info about about available APIs
 2. http://localhost:3000/add-team  --   this endpoint accept POST request with team object as json. make json object as follows <br>
   {
-   "teamName" : "Moin Ali starer",
-   "players" : ["MM Ali","Simarjeet Singh","Mukesh Choudhary", "Shivam Dube","Maheesh Theekshana","SV Samson","YS Chahal","Robin Uthappa","Shubham Garhwal","Dhruv Jurel","Daryl Mitchell"],
-   "captain" : "YS Chahal",
-   "viceCaptain" : "MM Ali"
+   "teamName" : "Moin Ali starer",<br>
+   "players" : ["MM Ali","Simarjeet Singh","Mukesh Choudhary", "Shivam Dube","Maheesh Theekshana","SV Samson","YS Chahal","Robin Uthappa","Shubham Garhwal","Dhruv Jurel","Daryl Mitchell"], <br>
+   "captain" : "YS Chahal",<br>
+   "viceCaptain" : "MM Ali"<br>
 }
 
 3.  http://localhost:3000/process-result    -- this endpoint accepts PUT request with no intput, and process team results
