@@ -1,7 +1,7 @@
 Note : please make sure to have mongoDB installed in your system before running this app locally.<br>
 **API information**<br>
 1. http://localhost:3000/       --     it will give info about about available APIs
-2. http://localhost:3000/add-team  --   this endpoint accept POST request with team object as json. make json object as follows
+2. http://localhost:3000/add-team  --   this endpoint accept POST request with team object as json. make json object as follows <br>
   {
    "teamName" : "Moin Ali starer",
    "players" : ["MM Ali","Simarjeet Singh","Mukesh Choudhary", "Shivam Dube","Maheesh Theekshana","SV Samson","YS Chahal","Robin Uthappa","Shubham Garhwal","Dhruv Jurel","Daryl Mitchell"],
